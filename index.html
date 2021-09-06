@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="res/images/favicon.ico"> <!-- C:\Users\Wend\Desktop\res\images -->
+	<title>My Dashboard</title>
+</head>
+<body>
+	<header>
+		<section>
+			<h1>Courses</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Course Title</th>
+						<th>Semester</th>
+						<th>Grade</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>
+							<a href="https://courses.cs.ut.ee/2021/ASD/fall/" target="_blank" rel="noopener noreferrer">Agile software development
+							</a>
+						</td>
+						<td>1</td>
+						<td>82</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+						<a href="https://courses.cs.ut.ee/2021/sm/fall/" target="_blank" rel="noopener noreferrer">System modeling
+							</a></td>
+						<td>1</td>
+						<td>85</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="https://courses.cs.ut.ee/2021/OOP/spring/" target="_blank" rel="noopener noreferrer">Object-oriented programming
+							</a></td>
+						<td>2</td>
+						<td>99</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><a href="https://www.ut.ee/en/estonian-language-courses-basis-english/" target="_blank" rel="noopener noreferrer">Estonian language Level A2
+							</a></td>
+						<td>2</td>
+						<td>65</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="fullSpace"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Add new course"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<form action="/action_page.php">
+				<label for="fname">Course name:</label><br>
+				<input type="text"><br>
+				<label for="semester">Select a semester:</label><br>
+				<select id="Semester" name="semester" form="semesterform">
+					<option value="sem1fall">Semester 1 fall</option>
+					<option value="sem2spring">Semester 1 spring</option>
+					<option value="sem2fall">Semester 2 fall</option>
+					<option value="sem2spring">Semester 2 spring</option>
+				</select><br>
+				<label for="grade">Grade(between 0 and 100):</label><br>
+				<input type="number" id="grade" name="grade" min="0" max="100">
+			</form>
+			<div>
+				<img src="res/images/me.png" alt="My picture">
+			</div>
+			<div>
+				<ul>
+					<li>John Doe</li>
+					<li>27/06/1993</li>
+					<li>Software Engineering</li>
+				</ul>
+			</div>
+			<div>
+				<strong>2.65</strong>
+			</div>
+		</section>
+		<strong>Welcome to your dashboard!</strong>
+	</header>
+	<footer>
+		<ul>
+			<li>
+				<a href="https://ois2.ut.ee/" target="_blank" rel="noopener noreferrer">OIS</a>
+			</li>
+			<li>
+				<a href="https://courses.cs.ut.ee/" target="_blank" rel="noopener noreferrer">Courses</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
